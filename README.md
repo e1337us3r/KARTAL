@@ -1,0 +1,59 @@
+# KARTAL
+
+This repository contains all files used in the research of KARTAL, a novel method for web application vulnerability detection using finetuned large language models.
+
+## Directory Structure
+
+- data/ (contains datasets in CSV format)
+- prompt-templates/ (contains prompt template files for data generation)
+- src/
+  - benchmark/ (contains benchmarking code for LLMs)
+  - data-generation/ (contains data generation and cleaning code)
+  - plotting/ (contains plotting code)
+
+## Requirements
+
+To run the KARTAL project, you need the following:
+
+- Python 3.10+
+- PyTorch 2
+
+or
+
+- Docker 20+
+
+## How to Run
+
+For data generation using the `prompter.py` script you will need to create a `.env` file. Use the `.env-example`file as the template and fill in the required values. You can get them from the respective LLM API dashboard.
+
+### Native
+
+1. Install Python 3.10+ on your system.
+2. (Optional) Create virtual environment using `python3 -m venv env`
+3. Install the required Python packages by running the following command:
+
+```shell
+pip install -r requirements.txt
+```
+
+3. Run experiments or data generation scripts located in the `src/` directory.
+
+### Docker
+
+1. Build the Docker image by running :
+
+```shell
+docker build -t kartal .
+```
+
+2. Run the Docker container using the built image and specify the Python file to run:
+
+```shell
+docker run --gpus all -it kartal python src/benchmark/{file_name}.py
+```
+
+Replace `{file_name}` with the path to your desired Python file within the `src/` directory.
+
+## License
+
+Apache 2.0
