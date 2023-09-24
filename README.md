@@ -56,15 +56,17 @@ docker run --gpus all -it kartal python src/benchmark/{file_name}.py
 Replace `{file_name}` with the path to your desired Python file within the `src/` directory.
 
 ## Citation
+```bibtex
 @article{Sakaoglu2023,
-title={{KARTAL: Web Application Vulnerability Hunting Using Large Language Models}},
-author={Sakaoglu, Sinan},
-year={2023},
-language={English},
-pages={85+8},
-keywords={vulnerability detection, large language models, web applications, application security, AI, broken acccess ontrol},
-url={http://urn.fi/URN:NBN:fi:aalto-202308275121}
-} 
+  title={{KARTAL: Web Application Vulnerability Hunting Using Large Language Models}},
+  author={Sakaoglu, Sinan},
+  year={2023},
+  language={English},
+  pages={85+8},
+  keywords={vulnerability detection, large language models, web applications, application security, AI, broken acccess ontrol},
+  url={http://urn.fi/URN:NBN:fi:aalto-202308275121}
+}
+```
 
 ## License
 
