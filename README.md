@@ -1,7 +1,7 @@
 # KARTAL: Web Application Vulnerability Hunting Using Large Language Models
 
 This repository contains all files used in the research of KARTAL, a novel method for web application vulnerability detection using finetuned large language models.
-You can view the published paper on (https://aaltodoc.aalto.fi/handle/123456789/122780)[https://aaltodoc.aalto.fi/handle/123456789/122780].
+You can view the published paper on [https://aaltodoc.aalto.fi/handle/123456789/122780](https://aaltodoc.aalto.fi/handle/123456789/122780)
 
 ## Directory Structure
 
